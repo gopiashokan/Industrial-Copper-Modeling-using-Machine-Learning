@@ -65,7 +65,7 @@ To use this project, follow these steps:
 
 - **Outliers Handling**: Outliers can significantly impact model performance. We tackle outliers in our data by using the Interquartile Range (IQR) method. This method involves identifying data points that fall outside the IQR boundaries and then converting them to values that are more in line with the rest of the data. This step aids in producing a more robust and accurate model.
 
-- **Wrong Delivery Date Handling**: In cases where some delivery Dates are precedes the item dates, we resolve this issue by calculating the difference and it's used to train a Random Forest Regressor model, which enables us to predict the corrected delivery date. This approach ensures that our dataset maintains data integrity and accuracy.
+- **Wrong Date Handling**: In cases where some delivery dates are precedes the item dates, we resolve this issue by calculating the difference and it's used to train a Random Forest Regressor model, which enables us to predict the corrected delivery date. This approach ensures that our dataset maintains data integrity and accuracy.
 
 
 **Exploratory Data Analysis (EDA) and Feature Engineering:**
@@ -86,6 +86,7 @@ To use this project, follow these steps:
 - **Algorithm Selection**: After rigorous evaluation, the Extra Trees Classifier and Random Forest Classifier emerge as strong contenders, offering commendable testing accuracy. However, careful examination reveals overfitting in training accuracy. We opt for the Random Forest Classifier due to its balance between interpretability and accuracy.
 
 - **Hyperparameter Tuning with GridSearchCV and Cross-Validation**: To fine-tune our model and mitigate overfitting, we employ GridSearchCV with cross-validation for hyperparameter tuning. This function allows us to systematically explore multiple parameter values and return the optimal set of parameters. 
+
 `{'max_depth': 20, 'max_features': 'sqrt', 'min_samples_leaf': 1, 'min_samples_split': 2}`
 
 - **Model Accuracy and Metrics**: With the optimized parameters, our Random Forest Classifier achieves an impressive 96.5% accuracy, ensuring robust predictions for unseen data. To further evaluate our model, we leverage key metrics such as the confusion matrix, precision, recall, F1-score, AUC, and ROC curve, providing a comprehensive view of its performance.
@@ -100,6 +101,7 @@ To use this project, follow these steps:
 - **Algorithm Selection**: After thorough evaluation, two contenders, the Extra Trees Regressor and Random Forest Regressor, emerge with commendable testing accuracy. However, closer examination reveals overfitting in training accuracy. We opt for the Random Forest Regressor, as it strikes a balance between interpretability and accuracy, making it a fitting choice.
 
 - **Hyperparameter Tuning with GridSearchCV and Cross-Validation**: To fine-tune our model and mitigate overfitting, we employ GridSearchCV with cross-validation for hyperparameter tuning. This function allows us to systematically explore multiple parameter values and return the optimal set of parameters.
+
 `{'max_depth': 20, 'max_features': None, 'min_samples_leaf': 1, 'min_samples_split': 2}`.
 
 - **Model Accuracy and Metrics**: With the optimized parameters, our Random Forest Regressor achieves an impressive 95.7% accuracy. This level of accuracy ensures robust predictions for unseen data. We further evaluate our model using essential metrics such as mean absolute error, mean squared error, root mean squared error, and the coefficient of determination (R-squared). These metrics provide a comprehensive assessment of our model's performance.
