@@ -86,7 +86,6 @@ To use this project, follow these steps:
 - **Algorithm Selection**: After rigorous evaluation, the Extra Trees Classifier and Random Forest Classifier emerge as strong contenders, offering commendable testing accuracy. However, careful examination reveals overfitting in training accuracy. We opt for the Random Forest Classifier due to its balance between interpretability and accuracy.
 
 - **Hyperparameter Tuning with GridSearchCV and Cross-Validation**: To fine-tune our model and mitigate overfitting, we employ GridSearchCV with cross-validation for hyperparameter tuning. This function allows us to systematically explore multiple parameter values and return the optimal set of parameters. 
-
 `{'max_depth': 20, 'max_features': 'sqrt', 'min_samples_leaf': 1, 'min_samples_split': 2}`
 
 - **Model Accuracy and Metrics**: With the optimized parameters, our Random Forest Classifier achieves an impressive 96.5% accuracy, ensuring robust predictions for unseen data. To further evaluate our model, we leverage key metrics such as the confusion matrix, precision, recall, F1-score, AUC, and ROC curve, providing a comprehensive view of its performance.
