@@ -263,10 +263,11 @@ with tab1:
     
         selling_price = prediction.regression()
 
-        # apply custom css style for prediction text
-        style_prediction()
-        st.markdown(f'### <div class="center-text">Predicted Selling Price = {selling_price}</div>', unsafe_allow_html=True)
-        st.balloons()
+        if selling_price:
+            # apply custom css style for prediction text
+            style_prediction()
+            st.markdown(f'### <div class="center-text">Predicted Selling Price = {selling_price}</div>', unsafe_allow_html=True)
+            st.balloons()
     
 
     except ValueError:
@@ -287,7 +288,7 @@ with tab2:
         if status == 1:
             
             # apply custom css style for prediction text
-            prediction()
+            style_prediction()
             st.markdown(f'### <div class="center-text">Predicted Status = Won</div>', unsafe_allow_html=True)
             st.balloons()
             
@@ -295,7 +296,7 @@ with tab2:
         elif status == 0:
             
             # apply custom css style for prediction text
-            prediction()
+            style_prediction()
             st.markdown(f'### <div class="center-text">Predicted Status = Lost</div>', unsafe_allow_html=True)
             st.snow()
     
