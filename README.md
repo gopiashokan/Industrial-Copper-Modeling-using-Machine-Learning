@@ -81,6 +81,8 @@ To use this project, follow these steps:
 
 - **Success and Failure Classification**: In our predictive journey, we utilize the 'status' variable, defining 'Won' as Success and 'Lost' as Failure. Data points with status values other than 'Won' and 'Lost' are excluded from our dataset to focus on the core classification task.
 
+- **Handling Data Imbalance**: In our predictive analysis, we encountered data imbalance within the 'status' feature. To address this issue, we implemented the SMOTETomek oversampling method, ensuring our dataset is well-balanced. This enhancement significantly enhances the performance and reliability of our classification tasks, yielding more accurate results in distinguishing between success and failure.
+
 - **Algorithm Assessment**: In the realm of classification, our primary objective is to predict the catogorical variable of status. The dataset is thoughtfully divided into training and testing subsets, setting the stage for our classification endeavor. We apply various algorithms to assess their performance and select the most suitable base algorithm for our specific data.
 
 - **Algorithm Selection**: After rigorous evaluation, the Extra Trees Classifier and Random Forest Classifier emerge as strong contenders, offering commendable testing accuracy. However, careful examination reveals overfitting in training accuracy. We opt for the Random Forest Classifier due to its balance between interpretability and accuracy.
