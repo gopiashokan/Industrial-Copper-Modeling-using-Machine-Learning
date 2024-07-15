@@ -1,4 +1,4 @@
-# Industrial Copper Modeling
+# Industrial Copper Modeling using Machine Learning
 
 **Introduction**
 
