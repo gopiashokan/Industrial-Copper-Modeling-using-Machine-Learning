@@ -18,12 +18,11 @@ Enhance your proficiency in data analysis and machine learning with our "Industr
 
 **Key Technologies and Skills**
 - Python
+- Scikit-Learn
 - Numpy
 - Pandas
-- Scikit-Learn
 - Matplotlib
 - Seaborn
-- Pickle
 - Streamlit
 
 
